@@ -1,0 +1,70 @@
+body {
+  font-family: "Trip Sans Reg", sans-serif;
+}
+
+/*-------- HEADER ------*/
+
+header {
+  display: flex;
+  /* background-color: green; */
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: black solid 4px;
+}
+
+.logoAndSearch_bar {
+  display: flex;
+  flex-direction: row;
+  /* background-color: pink; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  /* background-color: yellow; */
+}
+
+.logo {
+  height: 40px;
+  margin: 9px 24px;
+}
+
+.search_bar {
+  border: #e0e0e0 2px solid;
+  display: flex;
+  align-items: center;
+  height: 38px;
+  /* background-color: red; */
+  border-radius: 25px;
+  margin: 9x 24px;
+  /* flex: 1; */
+  width: 340px;
+}
+
+i {
+  /* background-color: blue; */
+  margin: 10px 12px;
+  size: 17px;
+}
+
+.log-in {
+  background-color: #333333;
+  border: 0;
+  color: #f8f8f8;
+  padding: 16px 16px;
+  border-radius: 22px;
+  font-size: 16px;
+}
+
+/* -------MAIN-------- */
+
+h1 span {
+  font-size: 54px;
+}
+h1 span:nth-child(1) {
+  color: #fb5d5d;
+}
