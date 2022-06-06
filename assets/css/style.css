@@ -1,16 +1,23 @@
 body {
   font-family: "Trip Sans", sans-serif;
   font-weight: 500;
+  /* display: block;
+  align-items: center; */
+  margin: 0px 392px;
+  background-color: pink;
+  /* min-width: auto; */
 }
 
 /*-------- HEADER ------*/
 
 header {
   display: flex;
-  /* background-color: green; */
+  background-color: green;
   align-items: center;
   justify-content: space-between;
-  border-bottom: black solid 4px;
+  margin-bottom: 20px;
+  /* border-bottom: black solid 4px; */
+  /* width: 1236px; */
 }
 
 .logoAndSearch_bar {
@@ -53,7 +60,7 @@ i {
 }
 
 .log-in {
-  background-color: #333333;
+  background-color: black;
   border: 0;
   color: #f8f8f8;
   padding: 16px 16px;
@@ -61,11 +68,41 @@ i {
   font-size: 16px;
 }
 
+.log-in:hover {
+  background-color: #333333;
+}
+
 /* -------MAIN-------- */
+
+h1 {
+  /* background-color: green; */
+  /* margin: 20px; */
+}
 
 h1 span {
   font-size: 54px;
 }
 h1 span:nth-child(1) {
   color: #fb5d5d;
+}
+
+main {
+  /* margin: 20px 392px; */
+  /* display: flex; */
+  /* flex-direction: row; */
+}
+
+.menu {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+}
+
+.casse {
+  /* background-color: pink; */
+  border: black solid 1px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
