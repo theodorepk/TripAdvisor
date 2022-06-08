@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Document</title>
+    <title>TripAd</title>
   </head>
   <body>
     <header>
@@ -24,9 +24,18 @@
         </div>
       </div>
       <nav class="user">
-        <i class="fa-solid fa-pen fa-lg"></i>
-        <i class="fa-regular fa-heart fa-lg"></i>
-        <i class="fa-regular fa-bell fa-lg"></i>
+        <div class="account">
+          <i class="fa-solid fa-pen fa-lg"></i>
+          <p>Avis</p>
+        </div>
+        <div class="account">
+          <i class="fa-regular fa-heart fa-lg"></i>
+          <p>Voyage</p>
+        </div>
+        <div class="account">
+          <i class="fa-regular fa-bell fa-lg"></i>
+          <p>Alertes</p>
+        </div>
         <button class="log-in">Connectez-vous</button>
       </nav>
     </header>
@@ -35,32 +44,78 @@
         <span> Explorez </span>
         <span>Paris</span>
       </h1>
-      <nav class="menu">
-        <div class="casse">
-          <p>Hôtels</p>
-          <i class="fa-solid fa-bed"></i>
+      <div class="container">
+        <nav class="menu">
+          <div class="case">
+            <p>Hôtels</p>
+            <i class="fa-solid fa-bed"></i>
+          </div>
+          <div class="case">
+            <p>Locations de vacances</p>
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="case">
+            <p>Activités</p>
+            <i class="fa-solid fa-ticket"></i>
+          </div>
+          <div class="case">
+            <p>Restaurants</p>
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <div class="case">
+            <p>Forums de voyage</p>
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <div class="case">
+            <p>Plus</p>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </nav>
+      </div>
+
+      <div class="container">
+        <div class="photo">
+          <div class="photo1">
+            <img src="/assets/img/photo1.jpeg" alt="" />
+          </div>
+          <div class="photo2">
+            <img src="/assets/img/photo20.jpeg" alt="" />
+            <img src="/assets/img/photo21.jpeg" alt="" />
+          </div>
         </div>
-        <div class="casse">
-          <p>Locations de vacances</p>
-          <i class="fa-solid fa-house"></i>
-        </div>
-        <div class="casse">
-          <p>Activités</p>
-          <i class="fa-solid fa-ticket"></i>
-        </div>
-        <div class="casse">
-          <p>Restaurants</p>
-          <i class="fa-solid fa-utensils"></i>
-        </div>
-        <div class="casse">
-          <p>Forums de voyage</p>
-          <i class="fa-solid fa-comments"></i>
-        </div>
-        <div class="casse">
-          <p>Plus</p>
-          <i class="fa-solid fa-ellipsis"></i>
-        </div>
+      </div>
+      <nav class="nav_under_caption">
+        <span>Europe</span> > <span>France</span> > <span>Ile-de-France</span> >
+        <span>Paris</span><span>▼</span>
       </nav>
+
+      <div class="container">
+        <div class="intro">
+          <div class="about_city">
+            <h2>La ville Lumière éblouit en tous points</h2>
+            <p>
+              Aucun autre endroit au monde ne fait autant rêver que Paris.<br />
+              La ville séduit par son art, son architecture, sa culture et sa
+              cuisine, mais il y a aussi des merveilles plus discrètes qui
+              n’attendent qu’à être explorées : les ruelles pavées pittoresques,
+              les pâtisseries au coin de la rue et les petits bistrots douillets
+              qui vous invitent à boire un verre de beaujolais. Préparez-vous à
+              vous approprier Paris.
+            </p>
+          </div>
+          <div class="where">
+            <div class="trip_begin">
+              <h3>Paris: commencez à organiser !</h3>
+              <p>
+                Créez un voyage pour enregistrer toutes vos idées et les
+                visualiser sur une carte
+              </p>
+              <button>Créez un voyage</button>
+            </div>
+            <img src="/assets/img/map.png" alt="map_of_paris" />
+          </div>
+        </div>
+      </div>
     </main>
     <footer></footer>
   </body>
