@@ -9,6 +9,11 @@ body {
   /* min-width: 40px; */
 }
 
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1136px;
@@ -171,11 +176,12 @@ h1 span:nth-child(1) {
 }
 
 .photo2 img {
+  display: block;
   width: 100%;
-  height: calc(50% - (3px / 2));
+  height: calc(50% - (2px / 2));
   object-fit: cover;
   /* box-sizing: border-box; */
-  margin: 0;
+  margin-bottom: 2px;
 }
 
 .photo2 img:hover {
@@ -220,6 +226,7 @@ h1 span:nth-child(1) {
   height: 100%;
   display: flex;
   flex-direction: column;
+  /* background-color: green; */
 }
 
 .trip_begin {
@@ -254,6 +261,104 @@ h1 span:nth-child(1) {
   height: 45%;
   object-fit: cover;
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 0 0 -0.5px;
   border-radius: 0 0 15px 15px;
+  /* display: row; */
+}
+
+.col1 {
+  width: 215px;
+}
+
+.les_immanquables h2 {
+  font-size: 28px;
+  margin-bottom: 35px;
+}
+
+.les_immanquables h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.col1 p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #333333;
+}
+
+.les_immanquables button {
+  font-family: "Trip Sans";
+  background-color: white;
+  border: 0;
+  padding: 20px 0 0 0;
+  margin: 0;
+  font-size: 16px;
+  color: #616161;
+}
+
+.les_immanquables .container {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+.col2 {
+  display: flex;
+  /* max-width: 100%; */
+  /* flex: 1; */
+  /* background-color: green; */
+  width: 841px;
+  height: 293px;
+  /* flex-wrap: nowrap; */
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.destination {
+  background-color: blue;
+  height: 100%;
+  width: 269px;
+  margin-left: 16px;
+  box-sizing: border-box;
+  /* flex-shrink: 0; */
+  /* display: flex; */
+}
+
+.destination span {
+  margin: 0;
+  background-color: #fb5d5d;
+}
+
+.destination p {
+  font-size: 14px;
+  font-family: "Trip Sans";
+}
+
+.les_immanquables img {
+  width: 269px;
+  height: 202px;
+}
+
+/* .rate {
+  display: flex;
+}
+
+.star-full {
+  width: 10px;
+  height: 10px;
+  background-color: #22aa6c;
+  border-radius: 100%;
+} */
+
+.cercle {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  bottom: 199px;
+  left: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
