@@ -14,7 +14,7 @@ body {
 }
 
 /* main {
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 1136px;
 } */
 
@@ -33,12 +33,28 @@ body {
 
 header {
   display: flex;
-  /* background-color: green; */
-  align-items: center;
-  justify-content: space-between;
+  background-color: white;
+  /* align-items: center; */
+  justify-content: center;
   margin-bottom: 20px;
   /* border-bottom: black solid 4px; */
   /* width: 1236px; */
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+  /* height: 80px; */
+}
+
+.true_header {
+  display: flex;
+  /* background-color: pink; */
+  align-items: center;
+  justify-content: space-between;
+  /* margin-bottom: 20px; */
+  /* border-bottom: black solid 4px; */
+  width: 1136px;
+  /* position: fixed; */
 }
 
 .logoAndSearch_bar {
@@ -109,7 +125,7 @@ i {
 
 h1 {
   /* background-color: blue; */
-  margin: 52px 0px 21px 0px;
+  margin: 60px 0px 21px 0px;
 }
 
 h1 span {
