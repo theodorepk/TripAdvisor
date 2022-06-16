@@ -144,7 +144,7 @@ h1 span:nth-child(1) {
 .menu {
   display: flex;
   /* flex-direction: column; */
-  justify-content: space-around;
+  /* justify-content: space-around; */
   /* gap: 10px; */
 }
 
@@ -428,4 +428,51 @@ footer {
 footer img {
   height: 30px;
   margin-right: 20px;
+}
+
+@media (min-width: 1184px) {
+  .menu {
+    background-color: #22aa6c;
+    display: flex;
+  }
+
+  .line {
+    display: flex;
+    flex: 1;
+    /* background-color: purple; */
+    margin: 0 5px;
+  }
+
+  .case {
+    background-color: pink;
+  }
+
+  #flight,
+  #cruise {
+    /* background-color: yellow; */
+    display: none;
+  }
+
+  .line:last-child {
+    display: flex;
+    background-color: #22aa6c;
+  }
+}
+
+@media (max-width: 1184px) {
+  .menu {
+    /* background-color: red; */
+    display: block;
+    justify-content: space-between;
+    align-items: space-between;
+  }
+
+  .line {
+    display: flex;
+    margin: 4.5px 0;
+  }
+
+  .case {
+    /* background-color: blue; */
+  }
 }
