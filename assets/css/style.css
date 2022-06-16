@@ -25,15 +25,16 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1136px;
-  /* background-color: red; */
+  max-width: 1184px;
+  /* margin: 0 24px; */
+  background-color: red;
 }
 
 /*-------- HEADER ------*/
 
 header {
   display: flex;
-  background-color: white;
+  background-color: green;
   /* align-items: center; */
   justify-content: center;
   margin-bottom: 20px;
@@ -53,7 +54,7 @@ header {
   justify-content: space-between;
   /* margin-bottom: 20px; */
   /* border-bottom: black solid 4px; */
-  width: 1136px;
+  width: 1184px;
   /* position: fixed; */
 }
 
@@ -155,7 +156,7 @@ h1 span:nth-child(1) {
   display: flex;
   align-items: center;
   padding: 10px;
-  flex: 1;
+  /* flex: 1; */
   justify-content: space-between;
   margin-right: 10px;
   /* width: 179px; */
@@ -436,15 +437,9 @@ footer img {
     display: flex;
   }
 
-  .line {
-    display: flex;
-    flex: 1;
-    /* background-color: purple; */
-    margin: 0 5px;
-  }
-
   .case {
     background-color: pink;
+    width: 179px;
   }
 
   #flight,
@@ -460,19 +455,19 @@ footer img {
 }
 
 @media (max-width: 1184px) {
-  .menu {
-    /* background-color: red; */
-    display: block;
-    justify-content: space-between;
-    align-items: space-between;
+  .account p {
+    display: none;
   }
 
-  .line {
-    display: flex;
-    margin: 4.5px 0;
+  .menu {
+    background-color: blue;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
   }
 
   .case {
     /* background-color: blue; */
+    /* flex: 1; */
+    width: 25%;
   }
 }
