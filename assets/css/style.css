@@ -5,18 +5,7 @@
 body {
   font-family: "Trip Sans", sans-serif;
   font-weight: 500;
-  /* display: block;
-  align-items: center; */
-  /* margin: 0 auto;
-  max-width: 1136px; */
-  /* background-color: pink; */
-  /* min-width: 40px; */
 }
-
-/* main {
-  margin: 20px auto;
-  max-width: 1136px;
-} */
 
 ::-webkit-scrollbar {
   width: 0;
@@ -24,44 +13,38 @@ body {
 }
 
 .container {
-  margin: 0 auto;
   max-width: 1184px;
-  /* margin: 0 24px; */
-  background-color: red;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 20px;
 }
 
 /*-------- HEADER ------*/
 
 header {
-  display: flex;
-  background-color: green;
-  /* align-items: center; */
-  justify-content: center;
   margin-bottom: 20px;
-  /* border-bottom: black solid 4px; */
-  /* width: 1236px; */
+  border-bottom: grey solid 1px;
   position: fixed;
   top: 0;
   width: 100vw;
   z-index: 1;
+  background-color: white;
   /* height: 80px; */
 }
 
-.true_header {
+header .container {
   display: flex;
   /* background-color: pink; */
   align-items: center;
   justify-content: space-between;
   /* margin-bottom: 20px; */
   /* border-bottom: black solid 4px; */
-  width: 1184px;
-  /* position: fixed; */
+  max-width: 1184px;
 }
 
 .logoAndSearch_bar {
   display: flex;
   flex-direction: row;
-  /* background-color: pink; */
   justify-content: space-around;
   align-items: center;
 }
@@ -159,7 +142,7 @@ h1 span:nth-child(1) {
   /* flex: 1; */
   justify-content: space-between;
   margin-right: 10px;
-  /* width: 179px; */
+  width: 179px;
 }
 
 .case:last-child {
@@ -169,6 +152,12 @@ h1 span:nth-child(1) {
 .case:hover {
   background-color: black;
   color: white;
+}
+
+#flight,
+#cruise {
+  /* background-color: yellow; */
+  display: none;
 }
 
 .photo {
@@ -324,7 +313,7 @@ h1 span:nth-child(1) {
   color: #616161;
 }
 
-.les_immanquables .container {
+.les_immanquables .whereToGo {
   display: flex;
   justify-content: space-between;
   /* background-color: red; */
@@ -431,43 +420,35 @@ footer img {
   margin-right: 20px;
 }
 
-@media (min-width: 1184px) {
-  .menu {
-    background-color: #22aa6c;
-    display: flex;
-  }
-
-  .case {
-    background-color: pink;
-    width: 179px;
-  }
-
-  #flight,
-  #cruise {
-    /* background-color: yellow; */
-    display: none;
-  }
-
-  .line:last-child {
-    display: flex;
-    background-color: #22aa6c;
-  }
-}
-
 @media (max-width: 1184px) {
   .account p {
     display: none;
   }
 
   .menu {
-    background-color: blue;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+  }
+
+  #flight,
+  #cruise {
+    display: flex;
   }
 
   .case {
-    /* background-color: blue; */
-    /* flex: 1; */
-    width: 25%;
+    width: calc((100% - 30px) / 4);
+    margin-top: 10px;
+    box-sizing: border-box;
+  }
+
+  .case:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .photo,
+  .photo1,
+  .photo2 {
+    height: 372px;
   }
 }
