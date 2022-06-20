@@ -1,6 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log(`The trip begins...`);
 
+  window.addEventListener("scroll", () => {
+    let scroll = window.scrollY;
+    if (scroll !== 0) {
+      document.querySelector("header").classList.add("bordered");
+    } else {
+      document.querySelector("header").classList.remove("bordered");
+    }
+  });
+
   document.querySelector(".log-in").addEventListener("click", () => {
     document.querySelector(".modal").classList.remove("hidden");
   });

@@ -23,13 +23,17 @@ body {
 
 header {
   margin-bottom: 20px;
-  border-bottom: grey solid 1px;
+  /* border-bottom: grey solid 1px; */
   position: fixed;
   top: 0;
   width: 100vw;
   z-index: 1;
   background-color: white;
   /* height: 80px; */
+}
+
+.bordered {
+  border-bottom: grey solid 1px;
 }
 
 header .container {
