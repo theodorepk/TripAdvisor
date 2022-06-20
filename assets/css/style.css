@@ -406,6 +406,24 @@ h1 span:nth-child(1) {
   font-weight: normal;
 }
 
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal div {
+  width: 284px;
+  height: 578px;
+  background-color: blueviolet;
+}
+
 footer {
   margin-top: 50px;
   height: 156px;

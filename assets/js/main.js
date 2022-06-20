@@ -1,3 +1,3 @@
 document.addEventListener("DOMContentLoaded", () => {
-  console.log(`The trip begin...`);
+  console.log(`The trip begins...`);
 });
