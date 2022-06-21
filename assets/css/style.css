@@ -32,6 +32,10 @@ header {
   /* height: 80px; */
 }
 
+#threeLines {
+  display: none;
+}
+
 .bordered {
   border-bottom: grey solid 1px;
 }
@@ -49,8 +53,9 @@ header .container {
 .logoAndSearch_bar {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
+  flex: 1;
 }
 
 .user {
@@ -77,12 +82,14 @@ header .container {
   border: #e0e0e0 2px solid;
   display: flex;
   align-items: center;
+  justify-content: start;
   height: 38px;
-  /* background-color: red; */
   border-radius: 25px;
   margin: 9x 24px;
-  /* flex: 1; */
-  width: 340px;
+  /* padding-right: 340px; */
+  max-width: 340px;
+  box-sizing: border-box;
+  flex: 1;
 }
 
 i {
@@ -107,6 +114,10 @@ i {
 
 .log-in:hover {
   background-color: #333333;
+}
+
+#mobileGlass {
+  display: none;
 }
 
 /* -------MAIN-------- */
@@ -460,9 +471,9 @@ footer img {
 }
 
 @media (max-width: 1184px) {
-  .account p {
+  /* .account p {
     display: none;
-  }
+  } */
 
   .menu {
     display: flex;
@@ -491,3 +502,32 @@ footer img {
     height: 372px;
   }
 }
+
+@media (max-width: 1024px) {
+  .account p {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .user {
+    display: none;
+  }
+
+  .search_bar {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #mobileGlass {
+    display: flex;
+  }
+
+  #threeLines {
+    display: flex;
+  }
+} ;
